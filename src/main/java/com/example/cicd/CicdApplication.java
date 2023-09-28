@@ -14,6 +14,11 @@ public class CicdApplication {
 		return "Welcome to the ci cd tutorial";
 	}
 
+	@GetMapping("/hello")
+	public String helloMessage() {
+		return "Hello Message";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(CicdApplication.class, args);
 	}
